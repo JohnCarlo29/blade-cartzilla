@@ -2,7 +2,7 @@
     "name": "merrymartwholesale/blade-cartzilla",
     "description": "A package to easily make use of Cartzilla in your Laravel Blade views.",
     "keywords": ["Blade", "Cartzilla", "Laravel"],
-    "homepage": "https://github.com/merrymartwholesale/blade-cartzila",
+    "homepage": "https://github.com/merrymartwholesale/blade-cartzilla",
     "license": "MIT",
     "authors": [
         {
