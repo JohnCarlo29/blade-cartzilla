@@ -1,8 +1,8 @@
 {
     "name": "merrymartwholesale/blade-cartzila",
     "description": "A package to easily make use of Heroicons in your Laravel Blade views.",
-    "keywords": ["Blade", "Heroicons", "Laravel"],
-    "homepage": "https://github.com/blade-organization/blade-heroicons",
+    "keywords": ["Blade", "Cartzilla", "Laravel"],
+    "homepage": "https://github.com/merrymartwholesale/blade-cartzila",
     "license": "MIT",
     "authors": [
         {
