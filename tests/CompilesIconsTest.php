@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
+use JohnCarlo29\Cartzilla\BladeCartzillaServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
 use Orchestra\Testbench\TestCase;
 
@@ -57,7 +57,7 @@ class CompilesIconsTest extends TestCase
     {
         return [
             BladeIconsServiceProvider::class,
-            BladeHeroiconsServiceProvider::class,
+            BladeCartzillaServiceProvider::class,
         ];
     }
 }
