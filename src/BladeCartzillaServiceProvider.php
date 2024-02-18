@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BladeUI\Heroicons;
+namespace MerryMart\Cartzilla;
 
 use BladeUI\Icons\Factory;
 use Illuminate\Contracts\Container\Container;
