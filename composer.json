@@ -20,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MerryMart\\Cartzilla\\": "src"
+            "JohnCarlo29\\Cartzilla\\": "src"
         }
     },
     "autoload-dev": {
