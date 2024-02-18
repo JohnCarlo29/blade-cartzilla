@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tests;
 
-use JohnCarlo29\Cartzilla\BladeCartzillaServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
+use JohnCarlo29\Cartzilla\BladeCartzillaServiceProvider;
 use Orchestra\Testbench\TestCase;
 
 class CompilesIconsTest extends TestCase
