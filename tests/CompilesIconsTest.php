@@ -13,13 +13,14 @@ class CompilesIconsTest extends TestCase
     /** @test */
     public function it_compiles_a_single_anonymous_component()
     {
-        $result = svg('heroicon-o-bell')->toHtml();
+        $result = svg('cartzilla-add-circle')->toHtml();
 
         // Note: the empty class here seems to be a Blade components bug.
         $expected = <<<'SVG'
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
-            </svg>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+        <title>add-circle</title>
+        <path d="M16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16c0-8.8-7.2-16-16-16zM16 29.867c-7.6 0-13.867-6.267-13.867-13.867s6.267-13.867 13.867-13.867 13.867 6.267 13.867 13.867-6.267 13.867-13.867 13.867v0zM21.867 15.333h-4.4v-4.4c0-0.667-0.533-1.067-1.067-1.067s-1.067 0.533-1.067 1.067v4.4h-4.4c-0.667 0-1.067 0.533-1.067 1.067s0.533 1.067 1.067 1.067h4.4v4.4c0 0.667 0.533 1.067 1.067 1.067s1.067-0.533 1.067-1.067v-4.4h4.4c0.667 0 1.067-0.533 1.067-1.067s-0.533-1.067-1.067-1.067z"></path>
+        </svg>
             SVG;
 
         $this->assertSame($expected, $result);
@@ -28,12 +29,13 @@ class CompilesIconsTest extends TestCase
     /** @test */
     public function it_can_add_classes_to_icons()
     {
-        $result = svg('heroicon-o-bell', 'w-6 h-6 text-gray-500')->toHtml();
+        $result = svg('cartzilla-add-circle', 'w-6 h-6 text-gray-500')->toHtml();
 
         $expected = <<<'SVG'
-            <svg class="w-6 h-6 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
-            </svg>
+        <svg class="w-6 h-6 text-gray-500" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+        <title>add-circle</title>
+        <path d="M16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16c0-8.8-7.2-16-16-16zM16 29.867c-7.6 0-13.867-6.267-13.867-13.867s6.267-13.867 13.867-13.867 13.867 6.267 13.867 13.867-6.267 13.867-13.867 13.867v0zM21.867 15.333h-4.4v-4.4c0-0.667-0.533-1.067-1.067-1.067s-1.067 0.533-1.067 1.067v4.4h-4.4c-0.667 0-1.067 0.533-1.067 1.067s0.533 1.067 1.067 1.067h4.4v4.4c0 0.667 0.533 1.067 1.067 1.067s1.067-0.533 1.067-1.067v-4.4h4.4c0.667 0 1.067-0.533 1.067-1.067s-0.533-1.067-1.067-1.067z"></path>
+        </svg>
             SVG;
 
         $this->assertSame($expected, $result);
@@ -42,13 +44,14 @@ class CompilesIconsTest extends TestCase
     /** @test */
     public function it_can_add_styles_to_icons()
     {
-        $result = svg('heroicon-o-bell', ['style' => 'color: #555'])->toHtml();
+        $result = svg('cartzilla-add-circle', ['style' => 'color: #555'])->toHtml();
 
-        $expected = <<<'SVG'
-            <svg style="color: #555" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+            $expected = <<<'SVG'
+            <svg style="color: #555" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+            <title>add-circle</title>
+            <path d="M16 0c-8.8 0-16 7.2-16 16s7.2 16 16 16 16-7.2 16-16c0-8.8-7.2-16-16-16zM16 29.867c-7.6 0-13.867-6.267-13.867-13.867s6.267-13.867 13.867-13.867 13.867 6.267 13.867 13.867-6.267 13.867-13.867 13.867v0zM21.867 15.333h-4.4v-4.4c0-0.667-0.533-1.067-1.067-1.067s-1.067 0.533-1.067 1.067v4.4h-4.4c-0.667 0-1.067 0.533-1.067 1.067s0.533 1.067 1.067 1.067h4.4v4.4c0 0.667 0.533 1.067 1.067 1.067s1.067-0.533 1.067-1.067v-4.4h4.4c0.667 0 1.067-0.533 1.067-1.067s-0.533-1.067-1.067-1.067z"></path>
             </svg>
-            SVG;
+                SVG;
 
         $this->assertSame($expected, $result);
     }
