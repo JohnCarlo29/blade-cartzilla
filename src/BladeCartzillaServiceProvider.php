@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MerryMart\Cartzilla;
+namespace JohnCarlo29\Cartzilla;
 
 use BladeUI\Icons\Factory;
 use Illuminate\Contracts\Container\Container;

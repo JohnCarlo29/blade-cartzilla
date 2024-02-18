@@ -31,7 +31,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "MerryMart\\Cartzilla\\BladeCartzillaServiceProvider"
+                "JohnCarlo29\\Cartzilla\\BladeCartzillaServiceProvider"
             ]
         }
     },
